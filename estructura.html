@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+    href="pngwing.com (1).png" 
+    type="image/x-icon">
+    <link rel="stylesheet" href="Reset.css">
+    <link rel="stylesheet" href="MyStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/918a9ba779.js" crossorigin="anonymous"></script>
+    <title>Challenge ONE - Encriptador</title>
+</head>
+<body>
+    <!--Preloader-->
+    <div class="contenedor_loader">
+        <div class="contenedor-img">
+            <img class="img" src="logo alura.png" alt="">
+        </div>
+        <div class="loading">
+            <div class="line-box">
+              <div class="line"></div>
+            </div>
+        </div>
+    </div>
+    <!--Fin preloader-->
+    <header>
+       <img class="logo" src="logo alura.png" alt="Logo de alura">
+       <div class="titulo-autor">
+            <h1 class="titulo">Encriptador</h1>
+            <h4 class="autor">By: Jose Sanchez</h4>
+       </div>
+       <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/jose-sanchez-eisi/"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/TheJose24"><i class="fa-brands fa-github"></i></a>
+        </li>
+      </ul>
+    </header>
+    <main id="hero">
+        <section class="section_1">
+            <textarea class="textoUsuario" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="info">
+                <img class="simbolo" src="Vector.png" alt="">
+                <h6 class="informacion">Solo letras minusculas y sin acentos</h6>
+            </div>
+        </section>
+
+        <section class="section_2">
+            <textarea id="input" class="textoSalida" cols="20" rows="10" readonly>Ningún mensaje encontrado</textarea></textarea>
+            <div class="caja-btn-copiar">
+                <a href="#" id="btnCopiar" class="btn">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    Copiar
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <a href="#" onclick="btnEncriptar()"><span>Encriptar</span></a>
+            <a href="#" onclick="btnDesencriptar()"><span>Desencriptar</span></a>
+        </div>
+        
+    </footer>
+    <video muted autoplay loop>
+        <source src="Background.mp4" type="video/mp4">
+    </video>
+    <div class="capa"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

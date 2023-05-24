@@ -1,0 +1,516 @@
+* {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+}
+
+/* Preloader*/
+.contenedor_loader{
+  background: #272626;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contenedor-img{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.img{
+  width: 20%;
+}
+
+.loading{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading .line-box{
+  padding: 2px;
+  width: 40%;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+}
+
+.loading .line-box .line{
+  height: 20px;
+  border-radius: 20px;
+  background: #FF8000;
+  animation: loading 3s forwards cubic-bezier(0,0,0,0);
+}
+
+@keyframes loading{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+/*Fin Preloader*/
+
+body,
+canvas {
+  background: #000;
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*Estilo del encabezado*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #272626;
+  width: 100%;
+  height: 12vh;
+}
+
+.logo {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10% 25%;
+  max-width: 60px;
+  height: 6.4vh;
+  margin-left: 35px;
+}
+
+.titulo-autor {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo {
+  margin-bottom: 0;
+  color: #d8dfe8;
+  font-size: 35px;
+}
+
+.autor {
+  text-align: center;
+  margin-top: 0;
+  color: #d8dfe8;
+  font-size: 15px;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  width: 7.66vh;
+  height: 7.66vh;
+  background-color: #fff;
+  text-align: center;
+  line-height: 53px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+ul li a .fab.fa-linkedin-in,
+ul li a .fa-brands.fa-github {
+  vertical-align: text-top;
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+ul li a:hover .fab.fa-linkedin-in,
+ul li a:hover .fa-brands.fa-github {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+ul li a:hover:before {
+  top: 0;
+}
+
+ul li:nth-child(1) a:before {
+  background: #333333;
+}
+
+ul li:nth-child(2) a:before {
+  background: #333333;
+}
+
+main {
+  width: 100%;
+  height: 73.6vh;
+  display: flex;
+}
+
+section {
+  height: 100%;
+}
+
+.section_1 {
+  width: 65%;
+  display: block;
+}
+
+.simbolo {
+  padding-top: 2em;
+  padding-left: 2em;
+}
+
+.informacion {
+  display: inline;
+  padding-top: 2em;
+  color: #d8dfe8;
+  font-size: 18px;
+}
+
+.textoUsuario {
+  text-align: center;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  background-color: rgba(39, 38, 38, 0.7);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 90px;
+  margin-left: 9%;
+  margin-top: 2%;
+  width: 80%;
+  height: 70%;
+}
+
+.section_2 {
+  margin-top: 4px;
+  width: 35%;
+  height: 87vh;
+  display: block;
+}
+
+.textoSalida {
+  text-align: center;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  background-color: rgba(39, 38, 38, 0.7);
+  width: 60%;
+  height: 85%;
+  background-image: url(Muñeco.png);
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  margin-left: 2em;
+  padding: 0 10px 64px 10px;
+}
+
+.caja-btn-copiar {
+  display: flex;
+  padding-left: 24vh;
+  margin-top: -80px;
+}
+/*ESTILO DEL BOTON*/
+.btn {
+  position: relative;
+  display: inline-block;
+  border-radius: 24px;
+  padding: 3px 23px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.btn:hover {
+  background: #FF8000;
+  box-shadow: 0 0 10px #FF8000, 0 0 40px #000, 0 0 80px #FF8000;
+  transition-delay: 0.1;
+}
+
+.btn span {
+  position: absolute;
+  display: block;
+}
+
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #fff);
+}
+
+.btn:hover #span1 {
+  left: 100%;
+  transition: 0.5s;
+}
+
+#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #fff);
+}
+
+.btn:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+#span2 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #fff);
+}
+
+.btn:hover #span2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+#span4 {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #fff);
+}
+
+.btn:hover #span4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+/*FIN ESTILO DEL BOTON*/
+
+footer {
+  width: 100%;
+  height: 13vh;
+}
+
+.container {
+  margin-left: 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #FF8000;
+  margin-inline: 5em;
+  border-radius: 9px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: #fff;
+  
+  transition: 0.5s;
+}
+
+.container a:hover {
+  border-radius: 9px;
+  transition-delay: 1s;
+  color: #000;
+  box-shadow: 0 0 10px #FF8000, 0 0 20px #FF8000, 0 0 40px #FF8000, 0 0 80px #FF8000,
+    0 0 160px #FF8000;
+}
+
+.container a span {
+  position: relative;
+  z-index: 100;
+}
+
+.container a:nth-child(2) {
+  filter: hue-rotate(180deg);
+}
+.container a::before {
+  border-radius: 9px;
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background: #FF8000;
+  box-shadow: 5px -8px 0 #FF8000, 5px 8px 0 #FF8000;
+  transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+  transition-delay: 0.5s, 0.5s, 0s, 0s;
+}
+.container a:hover::before {
+  border-radius: 9px;
+  width: 60%;
+  height: 100%;
+  left: -2px;
+  box-shadow: 5px 0px 0 #FF8000, 5px 0px 0 #FF8000;
+  transition-delay: 0s, 0.5s, 0.5s, 0.5s;
+}
+
+.container a::after {
+  border-radius: 9px;
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background: #FF8000;
+  box-shadow: -5px -8px 0 #FF8000, -5px 8px 0 #FF8000;
+  transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+  transition-delay: 0, 5s, 0.5s, 0s, 0s;
+}
+.container a:hover::after {
+  border-radius: 9px;
+  width: 60%;
+  height: 100%;
+  right: -2px;
+  box-shadow: -5px 0px 0 #FF8000, -5px 0px 0 #FF8000;
+  transition-delay: 0s, 0.5s, 0.5s, 0.5s;
+}
+
+#hero {
+  position: relative;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1c1c1d;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  z-index: -2;
+}
+
+@media screen and (max-width:480px) {
+  .logo{
+    margin-left: 2vh;
+    height: auto;
+    max-width: 40px;
+  }
+  .titulo-autor{
+    margin-left: 1.5vh;
+  }
+  .titulo{
+    font-size: 27px;
+  }
+  .autor{
+    font-size: 15px;
+  }
+  ul li a{
+    width: 5vh;
+    height: 5vh;
+    line-height: 5.5vh;
+    font-size: 4vh;
+    margin: 0 1vh 0 0;
+  }
+  main{
+    flex-direction: column-reverse;
+    height: 79vh;
+  }
+  .section_1{
+    height: 40vh;
+    width: 100%;
+  }
+  .section_2{
+    width: 100%;
+    height: 50%;
+  }
+  .textoSalida{
+    margin-top: 2vh;
+  }
+  .caja-btn-copiar{
+    padding-left: 15vh;
+  }
+  .textoUsuario{
+    margin-top: 6vh;
+  }
+  .info{
+    margin-top: -6%;
+  }
+  .simbolo{
+    padding-left: 3%;
+    padding-top: 0;
+  }
+  footer{
+    height: 9vh;
+  }
+  .container{
+    margin-left: 0;
+    justify-content: center;
+  }
+  .container a{
+    padding: 10px 10px;
+    margin-inline: 1vh;
+    border-radius: 9px;
+    top: 50%;
+    background: #FF8000;
+    box-shadow: 0 0 5px #FF8000, 0 0 10px #FF8000, 0 0 20px #FF8000, 0 0 40px #FF8000,
+    0 0 80px #FF8000;
+  }
+  .container a::before,.container a::after {
+    position: static;
+  }
+  
+}
