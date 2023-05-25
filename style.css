@@ -450,7 +450,7 @@ video {
     max-width: 40px;
   }
   .titulo-autor{
-    margin-left: 1.5vh;
+    margin-left: 2.5vh;
   }
   .titulo{
     font-size: 27px;
@@ -461,10 +461,18 @@ video {
   ul li a{
     width: 5vh;
     height: 5vh;
-    line-height: 5.5vh;
-    font-size: 4vh;
+    line-height: 5.3vh;
+    font-size: 3vh;
     margin: 0 1vh 0 0;
+    color: #fff;
+    background: #272626;
+    border: 2px solid #fff
   }
+  .fa-linkedin-in:before,
+  .fa-brands.fa-github:before{
+    color: #fff;
+  }
+  
   main{
     flex-direction: column-reverse;
     height: 79vh;
