@@ -354,7 +354,6 @@ footer {
 .container a:hover {
   border-radius: 1.5vh;
   transition-delay: 1s;
-  color: #000;
   box-shadow: 0 0 2vw #FF8000, 0 0 2vw #FF8000, 0 0 6vw #FF8000, 0 0 8vw #FF8000,
     0 0 10vw #FF8000;
 }
@@ -412,10 +411,6 @@ footer {
   transition-delay: 0s, 0.5s, 0.5s, 0.5s;
 }
 
-#hero {
-  position: relative;
-}
-
 video {
   position: fixed;
   top: 0;
@@ -447,7 +442,7 @@ video {
   .loading .line-box{
     padding: 0.6vh;
     width: 60%;
-    height: 3.4vw;
+    height: 4vw;
   }
   
   .loading .line-box .line{
@@ -456,9 +451,10 @@ video {
   }
   .logo{
     margin-left: 2.3vh;
+    border: 0.35vh solid #ccc;;
     padding: 1.8%;
     height: auto;
-    max-width: 16vw;
+    max-width: 14vw;
   }
   .titulo-autor{
     margin-left: 1vh;
@@ -470,10 +466,11 @@ video {
     font-size: 2vh;
   }
   ul li a{
-    width: 10vw;
-    height: 5vh;
+    border: 0.35vh solid #fff;
+    width: 10.5vw;
+    height: 5.25vh;
     line-height: 5.4vh;
-    font-size: 3.8vh;
+    font-size: 3vh;
     margin: 0 1vh 0 0;
     background: #272626;
   }
