@@ -434,7 +434,7 @@ video {
 }
 
 /* Responsive Design - adaptacion a dispositivos moviles */
-@media screen and (max-width:480px) {
+@media screen and (max-width:480px) and (orientation: portrait) {
   .img{
     width: 40vw;
   }
@@ -568,7 +568,7 @@ video {
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 767.98px) and (orientation: portrait) {
   .img{
     width: 35vw;
   }
