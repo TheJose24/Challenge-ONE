@@ -435,10 +435,6 @@ video {
 
 /* Responsive Design - adaptacion a dispositivos moviles */
 @media screen and (max-width:480px) {
-  header{
-    height: 12vh;
-  }
-
   .img{
     width: 40vw;
   }
@@ -573,10 +569,6 @@ video {
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  header{
-    height: 12vh;
-  }
-  
   .img{
     width: 35vw;
   }
@@ -711,4 +703,3 @@ video {
     position: static;
   }
 }
-
