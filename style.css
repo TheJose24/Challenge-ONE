@@ -434,141 +434,7 @@ video {
 }
 
 /* Responsive Design - adaptacion a dispositivos moviles */
-@media screen and (max-width:480px) and (orientation: portrait) {
-  .img{
-    width: 40vw;
-  }
-  
-  .loading .line-box{
-    padding: 0.6vh;
-    width: 60%;
-    height: 4vw;
-  }
-  
-  .loading .line-box .line{
-    height: 1.8vh;
-    border-radius: 2vh;
-  }
-  .logo{
-    margin-left: 2.3vh;
-    border: 0.35vh solid #ccc;;
-    padding: 1.8%;
-    height: auto;
-    max-width: 14vw;
-  }
-  .titulo-autor{
-    margin-left: 1vh;
-  }
-  .titulo{
-    font-size: 3.5vh;
-  }
-  .autor{
-    font-size: 2vh;
-  }
-  ul li a{
-    border: 0.35vh solid #fff;
-    width: 10.5vw;
-    height: 5.25vh;
-    line-height: 5.4vh;
-    font-size: 3vh;
-    margin: 0 1vh 0 0;
-    background: #272626;
-  }
-  .fa-linkedin-in:before,
-  .fa-brands.fa-github:before{
-    color: #fff;
-  }
-  
-  main{
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    height: 76vh;
-  }
-  .section_1 {
-    height: 30vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .textoUsuario {
-    line-height: 4vh;
-    padding: 1.5vw 1.5vh;
-    text-align: center;
-    color: #fff;
-    margin-top: 2%;
-    width: 80%;
-    height: 100%;
-    font-size: 3vh;
-    padding-block-start: 2vh;
-  }
-  
-  .info{
-    width: 100%;
-    height: 5vh;
-    margin: 0;
-  }
-  
-  .simbolo {
-    padding-left: 4.6852vw;
-    height: 1.7vh;
-  }
-  
-  .informacion {
-    margin-left: 1vw;
-    display: inline;
-    color: #d8dfe8;
-    font-size: 4vw;
-  }
-  .section_2{
-    margin-top: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 41.5vh;
-  }
-  .textoSalida{
-    line-height: 4vh;
-    font-size: 3vh;
-    width: 58%;
-    margin-top: 1vh;
-    height: 33vh;
-    margin-left: 0;
-    padding: 1.5vh 1vh 10vh 1vh;
-  }
-  .caja-btn-copiar{
-    height: 5.9vh;
-    margin-top: -8vh;
-    align-items: center;
-  }
-  .btn{
-    border-radius: 3.5vh;
-    padding: 0 4vw;
-  }
-  footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 12vh;
-  }
-  .container a{
-    padding: 10px 10px;
-    margin-inline: 1vh;
-    border-radius: 9px;
-    top: 50%;
-    background: #FF8000;
-    box-shadow: 0 0 5px #FF8000, 0 0 10px #FF8000, 0 0 20px #FF8000, 0 0 40px #FF8000,
-    0 0 80px #FF8000;
-  }
-  .container a::before,.container a::after {
-    position: static;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 767.98px) and (orientation: portrait) {
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
   .img{
     width: 35vw;
   }
@@ -703,3 +569,298 @@ video {
     position: static;
   }
 }
+
+@media screen and (min-width: 376px) and (max-width: 480px) and (orientation: portrait) {
+  .img{
+    width: 40vw;
+  }
+  
+  .loading .line-box{
+    padding: 0.6vh;
+    width: 60%;
+    height: 4vw;
+  }
+  
+  .loading .line-box .line{
+    height: 1.8vh;
+    border-radius: 2vh;
+  }
+  .logo{
+    margin-left: 2.3vh;
+    border: 0.35vh solid #ccc;;
+    padding: 1.8%;
+    height: auto;
+    max-width: 14vw;
+  }
+  .titulo-autor{
+    margin-left: 1vh;
+  }
+  .titulo{
+    font-size: 3.5vh;
+  }
+  .autor{
+    font-size: 2vh;
+  }
+  ul li a{
+    border: 0.35vh solid #fff;
+    width: 10.5vw;
+    height: 5.25vh;
+    line-height: 5.4vh;
+    font-size: 3vh;
+    margin: 0 1vh 0 0;
+    background: #272626;
+  }
+  .fa-linkedin-in:before,
+  .fa-brands.fa-github:before{
+    color: #fff;
+  }
+  
+  main{
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 76vh;
+  }
+  .section_1 {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .textoUsuario {
+    line-height: 4vh;
+    padding: 1.5vw 1.5vh;
+    text-align: center;
+    color: #fff;
+    margin-top: 2%;
+    width: 80%;
+    height: 100%;
+    font-size: 3vh;
+    padding-block-start: 2vh;
+  }
+  
+  .info{
+    width: 100%;
+    height: 5vh;
+    margin: 0;
+  }
+  
+  .simbolo {
+    padding-left: 4.6852vw;
+    height: 1.7vh;
+  }
+  
+  .informacion {
+    margin-left: 1vw;
+    display: inline;
+    color: #d8dfe8;
+    font-size: 4vw;
+  }
+  .section_2{
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 41.5vh;
+  }
+  .textoSalida{
+    line-height: 4vh;
+    font-size: 3vh;
+    width: 58%;
+    margin-top: 1vh;
+    height: 33vh;
+    margin-left: 0;
+    padding: 1.5vh 1vh 10vh 1vh;
+  }
+  .caja-btn-copiar{
+    height: 5.9vh;
+    margin-top: -8vh;
+    align-items: center;
+  }
+  .btn{
+    border-radius: 3.5vh;
+    padding: 0 4vw;
+  }
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 12vh;
+  }
+  .container a{
+    padding: 10px 10px;
+    margin-inline: 1vh;
+    border-radius: 9px;
+    top: 50%;
+    background: #FF8000;
+    box-shadow: 0 0 5px #FF8000, 0 0 10px #FF8000, 0 0 20px #FF8000, 0 0 40px #FF8000,
+    0 0 80px #FF8000;
+  }
+  .container a::before,.container a::after {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 375px) and (orientation: portrait) {
+  .img{
+    width: 33vw;
+  }
+  .loading .line-box{
+    height: 2vh;
+    padding: 0.6vh;
+    width: 60%;
+  }
+  .logo{
+    max-width: 12.5vw;
+    margin-left: 2.3vh;
+    border: 0.35vh solid #ccc;;
+    padding: 1.8%;
+    height: auto;
+  }
+  ul li a{
+    width: 11vw;
+    height: 6vh;
+    font-size: 3.5vh;
+  }
+
+  .loading .line-box .line{
+    height: 1.8vh;
+    border-radius: 2vh;
+  }
+  .titulo-autor{
+    margin-left: 1vh;
+  }
+  .titulo{
+    font-size: 3.5vh;
+  }
+  .autor{
+    font-size: 2vh;
+  }
+  ul li a{
+    border: 0.35vh solid #fff;
+    width: 10.5vw;
+    height: 5.25vh;
+    line-height: 5.4vh;
+    font-size: 3vh;
+    margin: 0 1vh 0 0;
+    background: #272626;
+  }
+  .fa-linkedin-in:before,
+  .fa-brands.fa-github:before{
+    color: #fff;
+  }
+  
+  main{
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 76vh;
+  }
+  .section_1 {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .textoUsuario {
+    line-height: 4vh;
+    padding: 1.5vw 1.5vh;
+    text-align: center;
+    color: #fff;
+    margin-top: 2%;
+    width: 80%;
+    height: 100%;
+    font-size: 3vh;
+    padding-block-start: 2vh;
+  }
+  
+  .info{
+    width: 100%;
+    height: 5vh;
+    margin: 0;
+  }
+  
+  .simbolo {
+    padding-left: 4.6852vw;
+    height: 1.7vh;
+  }
+  
+  .informacion {
+    margin-left: 1vw;
+    display: inline;
+    color: #d8dfe8;
+    font-size: 4vw;
+  }
+  .section_2{
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 41.5vh;
+  }
+  .textoSalida{
+    line-height: 4vh;
+    font-size: 3vh;
+    width: 58%;
+    margin-top: 1vh;
+    height: 33vh;
+    margin-left: 0;
+    padding: 1.5vh 1vh 10vh 1vh;
+  }
+  .caja-btn-copiar{
+    height: 5.9vh;
+    margin-top: -8vh;
+    align-items: center;
+  }
+  .btn{
+    border-radius: 3.5vh;
+    padding: 0 4vw;
+  }
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 12vh;
+  }
+  .container a{
+    padding: 10px 10px;
+    margin-inline: 1vh;
+    border-radius: 9px;
+    top: 50%;
+    background: #FF8000;
+    box-shadow: 0 0 5px #FF8000, 0 0 10px #FF8000, 0 0 20px #FF8000, 0 0 40px #FF8000,
+    0 0 80px #FF8000;
+  }
+  .container a::before,.container a::after {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 667px) and (orientation: landscape) {
+  .img{
+    width: 18vw;
+  }
+  .loading .line-box{
+    height: 1.7vw;
+    border: 0.55vh solid #ccc;
+    padding: 0.3vw;
+  }
+  .logo{
+    margin-left: 3vw;
+    max-width: 6vw;
+  }
+  ul{
+    margin-right: 2.5vw;
+  }
+}
+
+
+
+
+
