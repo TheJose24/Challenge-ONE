@@ -716,7 +716,7 @@ video {
     align-items: center;
     background-color: #272626;
     width: 100%;
-    height: 12vh;
+    height: 10vh;
   }
   .img{
     width: 33vw;
@@ -769,6 +769,7 @@ video {
   main{
     flex-direction: column-reverse;
     justify-content: space-between;
+    height: 71vh;
   }
   .section_1 {
     height: 30vh;
@@ -838,7 +839,7 @@ video {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 12vh;
+    height: 10vh;
   }
   .container a{
     padding: 10px 10px;
