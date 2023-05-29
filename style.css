@@ -705,6 +705,14 @@ video {
 }
 
 @media screen and (max-width: 375px) and (orientation: portrait) {
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #272626;
+    width: 100%;
+    height: 12vh;
+  }
   .img{
     width: 33vw;
   }
@@ -727,7 +735,7 @@ video {
   }
 
   .loading .line-box .line{
-    height: 1.8vh;
+    height: 2vh;
     border-radius: 2vh;
   }
   .titulo-autor{
