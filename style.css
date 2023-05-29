@@ -526,25 +526,38 @@ video {
     font-size: 4vw;
   }
   .section_2{
-    margin-top: 0;
+    margin-top: 1vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 41.5vh;
+    height: 37.5vh;
   }
-  .textoSalida{
-    line-height: 4vh;
-    font-size: 3vh;
-    width: 58%;
-    margin-top: 1vh;
-    height: 33vh;
+  .contenido-salida{
+    background-color: rgba(39, 38, 38, 0.7);
+    width: 55%;
+    height: 89.6%;
+    border: none;
+    border-radius: 1.9vh;
     margin-left: 0;
-    padding: 1.5vh 1vh 10vh 1vh;
+    padding: 1vh 2vh 10vh 2vh;
+  }
+  
+  .textoSalida {
+    width: 100%;
+    height: 95%;
+    text-align: center;
+    background-color: rgba(39, 38, 38, 0);
+    background-image: url(images/Muñeco\ \(1\).png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    color: #fff;
+    font-size: 2.5vh;
   }
   .caja-btn-copiar{
     height: 5.9vh;
-    margin-top: -8vh;
     align-items: center;
   }
   .btn{
@@ -664,30 +677,49 @@ video {
     font-size: 4vw;
   }
   .section_2{
-    margin-top: 0;
+    margin-top: 1vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 41.5vh;
+    height: 44vh;
   }
-  .textoSalida{
-    line-height: 4vh;
-    font-size: 3vh;
-    width: 58%;
-    margin-top: 1vh;
-    height: 33vh;
+  .contenido-salida{
+    background-color: rgba(39, 38, 38, 0.7);
+    width: 55%;
+    height: 89.6%;
+    border: none;
+    border-radius: 1.9vh;
     margin-left: 0;
-    padding: 1.5vh 1vh 10vh 1vh;
+    padding: 1vh 2vh 10vh 2vh;
+  }
+  
+  .textoSalida {
+    width: 100%;
+    height: 95%;
+    text-align: center;
+    background-color: rgba(39, 38, 38, 0);
+    background-image: url(images/Muñeco\ \(1\).png);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border: none;
+    color: #fff;
+    font-size: 2.5vh;
+    line-height: 2.3vh;
   }
   .caja-btn-copiar{
     height: 5.9vh;
-    margin-top: -8vh;
     align-items: center;
   }
   .btn{
+    display: flex;
+    flex-wrap: wrap;
     border-radius: 3.5vh;
     padding: 0 4vw;
+    height: 6vh;
+    font-size: 3vh;
+    align-content: center;
   }
   footer{
     display: flex;
@@ -810,25 +842,39 @@ video {
     font-size: 4vw;
   }
   .section_2{
-    margin-top: 0;
+    margin-top: 1vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 41.5vh;
+    height: 44vh;
   }
-  .textoSalida{
-    line-height: 4vh;
-    font-size: 3vh;
-    width: 58%;
-    margin-top: 1vh;
-    height: 33vh;
+  .contenido-salida{
+    background-color: rgba(39, 38, 38, 0.7);
+    width: 55%;
+    height: 89.6%;
+    border: none;
+    border-radius: 1.9vh;
     margin-left: 0;
-    padding: 1.5vh 1vh 10vh 1vh;
+    padding: 1vh 2vh 9vh 2vh;
+  }
+  
+  .textoSalida {
+    width: 100%;
+    height: 90%;
+    text-align: center;
+    background-color: rgba(39, 38, 38, 0);
+    background-image: url(images/Muñeco\ \(1\).png);
+    background-size: 95%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border: none;
+    color: #fff;
+    font-size: 2.5vh;
+    line-height: 2vh;
   }
   .caja-btn-copiar{
     height: 5.9vh;
-    margin-top: -8vh;
     align-items: center;
   }
   .btn{
