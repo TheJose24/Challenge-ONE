@@ -708,6 +708,7 @@ video {
   body, canvas{
     max-width: 100vw;
     max-height: 100vh;
+    overflow: hidden; /* Deshabilitar el desbordamiento del body */
   }
   header{
     display: flex;
