@@ -707,8 +707,6 @@ video {
 @media screen and (max-width: 375px) and (orientation: portrait) {
   body, canvas{
     max-width: 100vw;
-    max-height: 100vh;
-    overflow: hidden; /* Deshabilitar el desbordamiento del body */
   }
   header{
     display: flex;
@@ -716,7 +714,7 @@ video {
     align-items: center;
     background-color: #272626;
     width: 100%;
-    height: 8vh;
+    height: 6vh;
   }
   .img{
     width: 33vw;
@@ -769,7 +767,7 @@ video {
   main{
     flex-direction: column-reverse;
     justify-content: space-between;
-    height: 69vh;
+    height: 67vh;
   }
   .section_1 {
     height: 30vh;
@@ -839,7 +837,7 @@ video {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 8vh;
+    height: 6vh;
   }
   .container a{
     padding: 10px 10px;
