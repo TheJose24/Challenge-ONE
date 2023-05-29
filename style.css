@@ -769,7 +769,6 @@ video {
   main{
     flex-direction: column-reverse;
     justify-content: space-between;
-    height: 76vh;
   }
   .section_1 {
     height: 30vh;
