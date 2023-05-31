@@ -203,6 +203,7 @@ section {
   margin-top: 2%;
   width: 80%;
   height: 70%;
+  resize: none;
 }
 
 .info{
@@ -248,6 +249,7 @@ section {
   background-repeat: no-repeat;
   border: none;
   color: #fff;
+  resize: none;
 }
 
 .caja-btn-copiar {
