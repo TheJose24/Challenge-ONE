@@ -178,6 +178,10 @@ main {
   display: flex;
 }
 
+textarea:focus {
+  outline: none !important;
+}
+
 section {
   height: 100%;
 }
@@ -439,8 +443,8 @@ video {
   z-index: -2;
 }
 
-/* Responsive Design - adaptacion a dispositivos moviles */
-@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+/* Responsive Design - adaptacion a tablets */
+@media screen and (min-width: 769px) and (max-width: 960px) and (orientation: portrait) {
   .img{
     width: 35vw;
   }
@@ -451,29 +455,29 @@ video {
   }
   
   .loading .line-box .line{
-    height: 1.8vh;
+    height: 2.6vh;
     border-radius: 2vh;
   }
   .logo{
     margin-left: 2.3vh;
     padding: 1.8%;
     height: auto;
-    max-width: 16vw;
+    max-width: 13vw;
   }
   .titulo-autor{
     margin-left: 1vh;
   }
   .titulo{
-    font-size: 3.5vh;
+    font-size: 5vh;
   }
   .autor{
     font-size: 2vh;
   }
   ul li a{
     width: 11vw;
-    height: 5.5vh;
+    height: 8vh;
     line-height: 5.4vh;
-    font-size: 3.8vh;
+    font-size: 4.5vh;
     margin: 0 1vh 0 0;
     background: #272626;
   }
@@ -550,11 +554,11 @@ video {
     background-color: rgba(39, 38, 38, 0);
     background-image: url(images/Muñeco\ \(1\).png);
     background-size: 80%;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     border: none;
     color: #fff;
-    font-size: 2.5vh;
+    font-size: 3vh;
   }
   .caja-btn-copiar{
     height: 5.9vh;
@@ -575,20 +579,172 @@ video {
     height: 12vh;
   }
   .container a{
-    font-size: 2vh;
-    padding: 10px 10px;
+    font-size: 3vh;
+    padding: 3.6vw 1.3vw;
     margin-inline: 1vh;
-    border-radius: 9px;
+    border-radius: 3.6vw;
     top: 50%;
     background: #FF8000;
-    box-shadow: 0 0 5px #FF8000, 0 0 10px #FF8000, 0 0 20px #FF8000, 0 0 40px #FF8000,
-    0 0 80px #FF8000;
+    box-shadow: 0 0 2vw #FF8000, 0 0 4vw #FF8000, 0 0 8vw #FF8000, 0 0 16vw #FF8000,
+    0 0 32vw #FF8000;
   }
   .container a::before,.container a::after {
     position: static;
   }
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+  .img{
+    width: 35vw;
+  }
+  .loading .line-box{
+    padding: 0.6vh;
+    width: 60%;
+    height: 3.8vw;
+  }
+  
+  .loading .line-box .line{
+    height: 2.8vh;
+    border-radius: 2vh;
+  }
+  .logo{
+    margin-left: 2.3vh;
+    padding: 1.8%;
+    height: auto;
+    max-width: 12vw;
+  }
+  .titulo-autor{
+    margin-left: 1vh;
+  }
+  .titulo{
+    font-size: 5vh;
+  }
+  .autor{
+    font-size: 2.3vh;
+  }
+  ul li a{
+    width: 11vw;
+    height: 8vh;
+    line-height: 5.4vh;
+    font-size: 5vh;
+    margin: 0 1vh 0 0;
+    background: #272626;
+  }
+  .fa-linkedin-in:before,
+  .fa-brands.fa-github:before{
+    color: #fff;
+  }
+  
+  main{
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 76vh;
+  }
+  .section_1 {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .textoUsuario {
+    line-height: 4vh;
+    padding: 1.5vw 1.5vh;
+    text-align: center;
+    color: #fff;
+    margin-top: 2%;
+    width: 80%;
+    height: 100%;
+    font-size: 3vh;
+    padding-block-start: 2vh;
+  }
+  
+  .info{
+    width: 100%;
+    height: 5vh;
+    margin: 0;
+  }
+  
+  .simbolo {
+    padding-left: 4.6852vw;
+    height: 1.7vh;
+    max-width: min-content;
+  }
+  
+  .informacion {
+    margin-left: 1vw;
+    display: inline;
+    color: #d8dfe8;
+    font-size: 4vw;
+  }
+  .section_2{
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 38vh;
+  }
+  .contenido-salida{
+    background-color: rgba(39, 38, 38, 0.7);
+    width: 55%;
+    height: 89.6%;
+    border: none;
+    border-radius: 1.9vh;
+    margin-left: 0;
+    padding: 1vh 2vh 10vh 2vh;
+  }
+  
+  .textoSalida {
+    width: 100%;
+    height: 95%;
+    text-align: center;
+    background-color: rgba(39, 38, 38, 0);
+    background-image: url(images/Muñeco\ \(1\).png);
+    background-size: 80%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border: none;
+    color: #fff;
+    font-size: 3vh;
+    line-height: 4vh;
+  }
+  .caja-btn-copiar{
+    height: 5.9vh;
+    align-items: center;
+  }
+  .btn{
+    border-radius: 3.5vh;
+    padding: 0 4vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+  }
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 12vh;
+  }
+  .container a{
+    font-size: 3vh;
+    padding: 3.6vw 1.3vw;
+    margin-inline: 1vh;
+    border-radius: 3.6vw;
+    top: 50%;
+    background: #FF8000;
+    box-shadow: 0 0 2vw #FF8000, 0 0 4vw #FF8000, 0 0 8vw #FF8000, 0 0 16vw #FF8000,
+    0 0 32vw #FF8000;
+  }
+  .container a::before,.container a::after {
+    position: static;
+  }
+}
+
+
+/* Responsive Design - adaptacion a dispositivos moviles */
 @media screen and (min-width: 376px) and (max-width: 480px) and (orientation: portrait) {
   .img{
     width: 40vw;
@@ -729,20 +885,21 @@ video {
     height: 12vh;
   }
   .container a{
-    padding: 10px 10px;
+    font-size: 2vh;
+    padding: 3.6vw 1.3vw;
     margin-inline: 1vh;
-    border-radius: 9px;
+    border-radius: 3.6vw;
     top: 50%;
     background: #FF8000;
-    box-shadow: 0 0 5px #FF8000, 0 0 10px #FF8000, 0 0 20px #FF8000, 0 0 40px #FF8000,
-    0 0 80px #FF8000;
+    box-shadow: 0 0 2vw #FF8000, 0 0 4vw #FF8000, 0 0 8vw #FF8000, 0 0 16vw #FF8000,
+    0 0 32vw #FF8000;
   }
   .container a::before,.container a::after {
     position: static;
   }
 }
 
-@media screen and (max-width: 375px) and (orientation: portrait) {
+@media screen and (min-width:281px) and (max-width: 375px) and (orientation: portrait) {
   header{
     display: flex;
     justify-content: space-between;
@@ -752,7 +909,7 @@ video {
     height: 12vh;
   }
   .img{
-    width: 33vw;
+    width: 35vw;
   }
   .loading .line-box{
     height: 2vh;
@@ -852,7 +1009,7 @@ video {
   .contenido-salida{
     background-color: rgba(39, 38, 38, 0.7);
     width: 55%;
-    height: 80%;
+    height: 78%;
     border: none;
     border-radius: 1.9vh;
     margin-left: 0;
@@ -889,13 +1046,174 @@ video {
     height: 12vh;
   }
   .container a{
-    padding: 10px 10px;
+    font-size: 2.5vh;
+    padding: 3.6vw 1.3vw;
     margin-inline: 1vh;
-    border-radius: 9px;
+    border-radius: 3.6vw;
     top: 50%;
     background: #FF8000;
-    box-shadow: 0 0 5px #FF8000, 0 0 10px #FF8000, 0 0 20px #FF8000, 0 0 40px #FF8000,
-    0 0 80px #FF8000;
+    box-shadow: 0 0 2vw #FF8000, 0 0 4vw #FF8000, 0 0 8vw #FF8000, 0 0 16vw #FF8000,
+    0 0 32vw #FF8000;
+  }
+  .container a::before,.container a::after {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #272626;
+    width: 100%;
+    height: 12vh;
+  }
+  .img{
+    width: 35vw;
+  }
+  .loading .line-box{
+    height: 2vh;
+    padding: 0.6vh;
+    width: 60%;
+  }
+  .logo{
+    max-width: 12.5vw;
+    margin-left: 2.3vh;
+    border: 0.35vh solid #ccc;;
+    padding: 1.8%;
+    height: auto;
+  }
+  ul li a{
+    width: 11vw;
+    height: 6vh;
+    font-size: 3.5vh;
+  }
+
+  .loading .line-box .line{
+    height: 2vh;
+    border-radius: 2vh;
+  }
+  .titulo-autor{
+    margin-left: 1vh;
+  }
+  .titulo{
+    font-size: 3.5vh;
+  }
+  .autor{
+    font-size: 2vh;
+  }
+  ul li a{
+    border: 0.35vh solid #fff;
+    width: 10.5vw;
+    height: 5.25vh;
+    line-height: 5.4vh;
+    font-size: 3vh;
+    margin: 0 1vh 0 0;
+    background: #272626;
+  }
+  .fa-linkedin-in:before,
+  .fa-brands.fa-github:before{
+    color: #fff;
+  }
+  
+  main{
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 76vh;
+  }
+  .section_1 {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .textoUsuario {
+    line-height: 4vh;
+    padding: 1.5vw 1.5vh;
+    text-align: center;
+    color: #fff;
+    margin-top: 2%;
+    width: 80%;
+    height: 100%;
+    font-size: 3vh;
+    padding-block-start: 2vh;
+  }
+  
+  .info{
+    width: 100%;
+    height: 5vh;
+    margin: 0;
+  }
+  
+  .simbolo {
+    padding-left: 4.6852vw;
+    height: 1.7vh;
+  }
+  
+  .informacion {
+    margin-left: 1vw;
+    display: inline;
+    color: #d8dfe8;
+    font-size: 4vw;
+  }
+  .section_2{
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 44vh;
+  }
+  .contenido-salida{
+    background-color: rgba(39, 38, 38, 0.7);
+    width: 55%;
+    height: 78%;
+    border: none;
+    border-radius: 1.9vh;
+    margin-left: 0;
+    padding: 1vh 2vh 9vh 2vh;
+  }
+  
+  .textoSalida {
+    width: 100%;
+    height: 90%;
+    text-align: center;
+    background-color: rgba(39, 38, 38, 0);
+    background-image: url(images/Muñeco\ \(1\).png);
+    background-size: 95%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border: none;
+    color: #fff;
+    font-size: 2.5vh;
+    line-height: 3.5vh;
+  }
+  .caja-btn-copiar{
+    height: 5.9vh;
+    align-items: center;
+  }
+  .btn{
+    border-radius: 3.5vh;
+    padding: 0 4vw;
+  }
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 12vh;
+  }
+  .container a{
+    padding: 3.6vw 1.3vw;
+    margin-inline: 1vh;
+    border-radius: 3.6vw;
+    top: 50%;
+    background: #FF8000;
+    box-shadow: 0 0 2vw #FF8000, 0 0 4vw #FF8000, 0 0 8vw #FF8000, 0 0 16vw #FF8000,
+    0 0 32vw #FF8000;
   }
   .container a::before,.container a::after {
     position: static;
